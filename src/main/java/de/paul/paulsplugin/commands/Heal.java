@@ -5,12 +5,11 @@ import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
-import org.jetbrains.annotations.NotNull;
 
 public class Heal implements CommandExecutor {
 
     @Override
-    public boolean onCommand(CommandSender commandSender, @NotNull Command cmd, @NotNull String label, String[] args) {
+    public boolean onCommand(CommandSender commandSender, Command cmd, String label, String[] args) {
         if (!commandSender.hasPermission("paulplugin.heal.self")) {
             commandSender.sendMessage("§4Dazu hast du keine Rechte!");
             return true;
