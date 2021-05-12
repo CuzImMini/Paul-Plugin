@@ -1,0 +1,23 @@
+name: Pauls-Plugin
+main: de.paul.paulsplugin.Main
+version: 1.0.0
+api-version: 1.16
+commands:
+  ping:
+    description: PingPong Befehl.
+    usage: "/ping [me]"
+  sander:
+    description: Sander-Beschreibe Befehl.
+    usage: "/sander [das wars :D]"
+  heal:
+    description: Heal Befehl.
+    usage: "/heal [Spieler]"
+  rolldice:
+    description: Würfel Befehl.
+    usage: "/rolldice"
+  shootme:
+    description: Schiesst Pfeile auf dich.
+    usage: "/shootme"
+  createwarp:
+    description: Erstelle einen Warp mit deiner aktuellen Position.
+    usage: "/createwarp [Name]"
