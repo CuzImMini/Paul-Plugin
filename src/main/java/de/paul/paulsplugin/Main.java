@@ -1,12 +1,12 @@
 package de.paul.paulsplugin;
 
+import de.paul.paulsplugin.commands.Dice;
 import de.paul.paulsplugin.commands.Heal;
 import de.paul.paulsplugin.commands.Pingpong;
 import de.paul.paulsplugin.commands.Sander;
-import de.paul.paulsplugin.commands.Dice;
-import de.paul.paulsplugin.troll.JoinDead;
 import de.paul.paulsplugin.messages.MessageListener;
 import de.paul.paulsplugin.monument.StructureTest;
+import de.paul.paulsplugin.troll.JoinDead;
 import de.paul.paulsplugin.troll.TestArrow;
 import de.paul.paulsplugin.warp.CreateWarps;
 import dev.minecode.core.spigot.CoreSpigot;
@@ -16,6 +16,10 @@ import org.bukkit.plugin.java.JavaPlugin;
 public class Main extends JavaPlugin {
 
     private static Main instance;
+
+    public static Main getInstance() {
+        return instance;
+    }
 
     @Override
     public void onEnable() {
@@ -38,10 +42,6 @@ public class Main extends JavaPlugin {
         CoreSpigot coreSpigot = CoreSpigot.getInstance();
         coreSpigot.registerPlugin("Paul-Plugin", getDescription().getVersion(), this);
 
-    }
-
-    public static Main getInstance() {
-        return instance;
     }
 }
 

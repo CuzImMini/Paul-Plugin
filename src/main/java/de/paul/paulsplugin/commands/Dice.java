@@ -4,14 +4,14 @@ import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
-import org.jetbrains.annotations.NotNull;
 
 import java.util.Random;
 
+@SuppressWarnings("ALL")
 public class Dice implements CommandExecutor {
 
     @Override
-    public boolean onCommand(@NotNull CommandSender commandSender, @NotNull Command cmd, @NotNull String label, String[] args) {
+    public boolean onCommand(CommandSender commandSender, Command cmd, String label, String[] args) {
 
         Random random = new Random();
         Player player = (Player) commandSender;
